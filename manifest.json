@@ -2,22 +2,110 @@
   "runtime": "canvas-v1",
   "name": "Fire Shader",
   "description": "Renders a configurable, transparent WebGL2 fire effect across the shared wallpaper Canvas.",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "entry": "dist/assets/addon.js",
   "thumbnail": "assets/thumbnail.png",
   "deviceSettingsVersion": "2",
-  "ui": { "pointerEvents": "none" },
+  "ui": {
+    "pointerEvents": "none"
+  },
   "settings": [
-    { "id": "colors", "type": "section", "label": "Colors" },
-    { "id": "primaryColor", "type": "color", "label": "Primary color", "parent": "colors", "scope": "layer", "default": "#ff6b35" },
-    { "id": "secondaryColor", "type": "color", "label": "Secondary color", "parent": "colors", "scope": "layer", "default": "#ff0000" },
-    { "id": "motion", "type": "section", "label": "Motion" },
-    { "id": "speed", "type": "range", "label": "Speed", "parent": "motion", "scope": "layer", "default": 0.2, "min": 0, "max": 1, "step": 0.05 },
-    { "id": "appearance", "type": "section", "label": "Appearance" },
-    { "id": "intensity", "type": "range", "label": "Intensity", "parent": "appearance", "scope": "layer", "default": 0.9, "min": 0, "max": 2, "step": 0.1 },
-    { "id": "scale", "type": "range", "label": "Detail scale", "parent": "appearance", "scope": "layer", "default": 7, "min": 1, "max": 15, "step": 0.5 },
-    { "id": "turbulence", "type": "range", "label": "Turbulence", "parent": "appearance", "scope": "layer", "default": 0.9, "min": 0, "max": 2, "step": 0.1 },
-    { "id": "height", "type": "range", "label": "Flame height", "parent": "appearance", "scope": "layer", "default": 1, "min": 0.3, "max": 3, "step": 0.1 },
-    { "id": "opacity", "type": "range", "label": "Opacity", "parent": "appearance", "scope": "layer", "default": 1, "min": 0, "max": 1, "step": 0.05 }
+    {
+      "id": "colors",
+      "type": "section",
+      "label": "Colors"
+    },
+    {
+      "id": "primaryColor",
+      "type": "color",
+      "label": "Primary color",
+      "parent": "colors",
+      "scope": "layer",
+      "default": "#ff6b35"
+    },
+    {
+      "id": "secondaryColor",
+      "type": "color",
+      "label": "Secondary color",
+      "parent": "colors",
+      "scope": "layer",
+      "default": "#ff0000"
+    },
+    {
+      "id": "motion",
+      "type": "section",
+      "label": "Motion"
+    },
+    {
+      "id": "speed",
+      "type": "range",
+      "label": "Speed",
+      "parent": "motion",
+      "scope": "layer",
+      "default": 0.2,
+      "min": 0,
+      "max": 1,
+      "step": 0.05
+    },
+    {
+      "id": "appearance",
+      "type": "section",
+      "label": "Appearance"
+    },
+    {
+      "id": "intensity",
+      "type": "range",
+      "label": "Intensity",
+      "parent": "appearance",
+      "scope": "layer",
+      "default": 0.9,
+      "min": 0,
+      "max": 2,
+      "step": 0.1
+    },
+    {
+      "id": "scale",
+      "type": "range",
+      "label": "Detail scale",
+      "parent": "appearance",
+      "scope": "layer",
+      "default": 7,
+      "min": 1,
+      "max": 15,
+      "step": 0.5
+    },
+    {
+      "id": "turbulence",
+      "type": "range",
+      "label": "Turbulence",
+      "parent": "appearance",
+      "scope": "layer",
+      "default": 0.9,
+      "min": 0,
+      "max": 2,
+      "step": 0.1
+    },
+    {
+      "id": "height",
+      "type": "range",
+      "label": "Flame height",
+      "parent": "appearance",
+      "scope": "layer",
+      "default": 1,
+      "min": 0.3,
+      "max": 3,
+      "step": 0.1
+    },
+    {
+      "id": "opacity",
+      "type": "range",
+      "label": "Opacity",
+      "parent": "appearance",
+      "scope": "layer",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "step": 0.05
+    }
   ]
 }
